@@ -7,9 +7,14 @@ body{
     font-family: sans-serif;
 }
 
+main{
+   background:linear-gradient(to top, rgba(0,0,0,0.9)50%,rgba(0,0,0,0.9)50%), url(./image/maritime-vessel.jpg);
+}
+
 .nav{
     display: flex;
     justify-content: center;
+    align-items: center;
     background-color: transparent;
     gap: 25%;
     /* background-color: black; */
@@ -338,7 +343,7 @@ body{
     background:linear-gradient(to top, rgba(0,0,0,0.8)50%,rgba(0,0,0,0.8)50%), url(./image/605fa5a0cc41f.jpg);
     background-position: center;
     background-size: cover;
-    height: y8;
+    height: 40vh;
     margin-bottom: 20px;
 }
 
@@ -347,7 +352,7 @@ body{
    justify-content: end;
    align-items: center;
    color: #fff;
-   padding-top: 120px;
+   padding-top: 130px;
    margin-right: 130px;
    font-size: small;
 }
@@ -387,4 +392,164 @@ body{
 .shipic h5{
    margin-left: 10px;
    font-size: 15px;
+}
+
+.ship2ic{
+   display: flex;
+   justify-content: center;
+   /* align-items: center; */
+   gap: 60px;
+
+}
+
+.ship2ic h3{
+   /* font-size: 60px; */
+   display: flex;
+   justify-content: center;
+   /* font-weight: bold; */
+   margin-top: 20PX;
+   margin-left: 90px;
+   color: #000000;
+   font-size: 65px;
+   font-weight: 600;
+}
+
+.ship2icon{
+   display: flex;
+   flex-direction: column;
+
+}
+.ship2icon h5{
+   font-size: 30px;
+   margin-top: 40px;
+   margin-bottom: 10px;
+   
+}
+.ship2icon p{
+   margin-left: 30px;
+   color: #837E7E;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 1.6em;
+}
+
+.ship2ic img{
+   width: 620px;
+   height: 450px;
+
+}
+
+.police{
+   margin: 30px 0;
+   padding: 50px;
+}
+
+.police img{
+   width: 398px;
+   height: 255px;
+}
+
+.police h3{
+   font-size: 30px;
+   padding-left: 120px;
+}
+
+.policecon{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.police1 h4{
+   font-size: 18px;
+   padding: 5px 0;
+}
+
+.police1 h6{
+   line-height: 1.3em;
+   font-size: 12px;
+   margin-bottom: 10px;
+   color: #adadad;
+   
+}
+
+.police1 p{
+   margin: 0;
+   line-height: 1.5em;
+   font-size: 14px;
+   color: #777;
+}
+
+.read{
+   padding: 10px 0;
+   color: #54595F;
+}
+
+.div{
+   display: flex;
+   justify-content: center;
+}
+
+.almost{
+   display: flex;
+   justify-content: center;
+   gap: 30px;
+   width: 100%;
+   margin-bottom: 20px;
+}
+
+.almost h4{
+   width: 30%;
+   margin-top: 50px;
+}
+
+.almost form{
+   width: 50%;
+   border: 5px solid #dfdfdf;
+   padding: 30px 10px;
+   height: 73vh;
+}
+
+.formcon{
+   display: flex;
+   flex-direction: column;
+}
+
+.formcon label{
+   border-bottom: 1px solid #837E7E;
+   padding-top: 20px;
+   padding-bottom: 7px;
+   margin-bottom: 5px;
+   font-size: 20px;
+   padding-left: 20px;
+   padding-right: 20px;
+}
+
+input{
+   border: none;
+   outline: none;
+}
+
+.formcon input{
+   outline: none;
+   padding: 10px;
+   border-bottom: 1px solid #837E7E;
+   font-size: 15px;
+   padding-left: 30px;
+   padding-right: 20px;
+   /* border: none; */
+
+}
+
+textarea{
+   border-left: 1px;
+   border-right: 1px;
+   height: 100px;
+}
+
+.submit{
+   background-color: #138AB9;
+   color: white;
+   width: 100%;
+   height: 40px;
+   margin-top: 10px;
 }
