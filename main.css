@@ -477,6 +477,17 @@ main{
    line-height: 1.5em;
    font-size: 14px;
    color: #777;
+   transition: opacity 250ms ease-in, transform 400ms ease-in;
+   /* transform: rotate(30dg); */
+   opacity: 0;
+}
+.police1.appear{
+   transform: translateX(0);
+   opacity: 1;
+}
+.police1 p.appear{
+   transform: translateX(30%);
+   opacity: 1;
 }
 
 .read{
@@ -492,22 +503,31 @@ main{
 .almost{
    display: flex;
    justify-content: center;
-   gap: 30px;
+   gap: 10px;
    width: 100%;
    margin-bottom: 20px;
 }
 
-.almost h4{
+label{
+   color: #54595F;
+}
+
+.almost h3{
    width: 30%;
-   margin-top: 50px;
+   margin-top: 60px;
+   font-size: 15px;
+   line-height: 15px;
+   color: #837E7E;
+   font-weight: 200 ;
 }
 
 .almost form{
    width: 50%;
    border: 5px solid #dfdfdf;
    padding: 30px 10px;
-   height: 73vh;
+   height: 87vh;
 }
+
 
 .formcon{
    display: flex;
@@ -552,4 +572,63 @@ textarea{
    width: 100%;
    height: 40px;
    margin-top: 10px;
+}
+
+.foot{
+   background:url(./image/footer\ \(1\).jpg);
+   background-size: cover;
+   background-position: center;
+   display: grid;
+   grid-template-columns: 1fr 5fr 5fr 3fr 7fr 5fr;
+   column-gap: 20px;
+   overflow: hidden;
+   /* padding: 30px; */
+}
+
+.foot1{
+   /* transform: translateX(-70%); */
+   transform: translateY(30%);
+   background:linear-gradient( rgba(0,0,0,0.9)50%);
+   margin-left: -9%;
+
+}
+
+.foot2{
+   color: #fff;
+   margin-top: 70px;
+}
+
+.foot2 h5{
+   line-height: 20px;
+}
+
+.foot3{
+   color: #fff;
+   margin-top: 70px;
+}
+
+.foot3sub1{
+   display: flex;
+   align-items: center;
+   gap: 10px;
+}
+
+.foot3sub1 h5{
+   line-height: 22px;
+}
+
+.formfoot{
+   color: #fff;
+   margin-top: 00px;
+   background-color: #015e83 ;
+   padding: 70px 30px;
+   
+}
+
+.fade-in{
+   opacity: 0;
+   transition: opacity 500ms ease-in;
+}
+.fade-in.appear{
+   opacity: 1;
 }
