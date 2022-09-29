@@ -579,7 +579,7 @@ textarea{
    background-size: cover;
    background-position: center;
    display: grid;
-   grid-template-columns: 1fr 5fr 5fr 3fr 7fr 5fr;
+   grid-template-columns: 1fr 6fr 6fr 3fr 7fr 5fr;
    column-gap: 20px;
    overflow: hidden;
    /* padding: 30px; */
