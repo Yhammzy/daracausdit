@@ -616,7 +616,7 @@ textarea{
    grid-template-columns: 1fr 6fr 6fr 3fr 7fr 5fr;
    column-gap: 20px;
    overflow: hidden;
-   height: 50vh;
+   height: 55vh;
    /* padding: 30px; */
 }
 
