@@ -394,7 +394,7 @@ main{
 .shipic{
    display: flex;
    flex-direction: column;
-   font-size: 30px;
+   font-size: 25px;
 }
 
 .fa-users{
@@ -657,7 +657,7 @@ textarea{
    margin-top: 00px;
    background-color: #015e83 ;
    padding: 70px 30px;
-   height: 50vh;
+   height: 40vh;
    
 }
 
