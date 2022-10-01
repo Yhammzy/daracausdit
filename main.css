@@ -477,7 +477,7 @@ main{
 
 .police h3{
    font-size: 30px;
-   padding-left: 140px;
+   padding-left: 130px;
 }
 
 .policecon{
@@ -657,7 +657,7 @@ textarea{
    margin-top: 00px;
    background-color: #015e83 ;
    padding: 70px 30px;
-   height: 45vh;
+   height: 55vh;
    
 }
 
@@ -825,13 +825,13 @@ textarea{
    display: flex;
    justify-content: center;
    align-items: center;
-   background-color: rgba(0,0,0,0.5);
+   background-color: rgba(0,0,0,0.9);
    /* background: transparent; */
    gap: 25%;
    /* background-color: black; */
    border-bottom: 1px;
    /* background:linear-gradient(to top, rgba(0,0,0,0.9)50%,rgba(0,0,0,0.9)50%), url(./image/maritime-vessel.jpg); */
-   height: 10vh;
+   height: 8vh;
    margin-top: -30px;
  
 }
