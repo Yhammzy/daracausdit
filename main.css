@@ -15,14 +15,13 @@ main{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: transparent;
+    background-color: rgba(0,0,0,0.7);
+    /* background: transparent; */
     gap: 25%;
-    /* background-color: black; */
     border-bottom: 1px;
-    /* background:linear-gradient(to top, rgba(0,0,0,0.9)50%,rgba(0,0,0,0.9)50%), url(./image/maritime-vessel.jpg); */
     height: 10vh;
-    background-size: cover;
-    background-position: top;
+    /* background-size: cover;
+    background-position: top; */
     position: sticky;
     top: 0;
     z-index: 7678;
@@ -356,14 +355,22 @@ main{
     margin-bottom: 20px;
 }
 
-.ship h4{
+.h4class{
    display: flex;
    justify-content: end;
    align-items: center;
    color: #fff;
    padding-top: 130px;
-   margin-right: 130px;
-   font-size: small;
+   margin-right: 280px;
+   font-size: large;
+   transition: opacity 250ms ease-in, transform 400ms ease-in;
+   transform: translateY(-30%);
+   opacity: 0;
+}
+
+.h4class.appear{
+   transform: translateY(0);
+   opacity: 1;
 }
 
 .shipi{
@@ -375,19 +382,28 @@ main{
    gap: 300px;
    /* font-size: 30px; */
    padding-top: 10px;
+   transition: opacity 250ms ease-in, transform 400ms ease-in;
+   transform: translateY(30%);
+   opacity: 0;
 
+}
+.shipi.appear{
+   transform: translateY(0);
+   opacity: 1;
 }
 .shipic{
    display: flex;
    flex-direction: column;
+   font-size: 30px;
 }
 
 .fa-users{
    padding: 20px;
-   border-radius: 30px;
+   border-radius: 40px;
    background-color: #54595F;
    display: flex;
    color: #fff;
+   font-size: 30px;
 }
 
 .fa-facebook{
@@ -399,8 +415,9 @@ main{
 }
 
 .shipic h5{
-   margin-left: 10px;
-   font-size: 15px;
+   margin-left: 11px;
+   margin-top: 10px;
+   font-size: 20px;
 }
 
 .ship2ic{
@@ -460,7 +477,7 @@ main{
 
 .police h3{
    font-size: 30px;
-   padding-left: 120px;
+   padding-left: 310px;
 }
 
 .policecon{
@@ -535,6 +552,14 @@ label{
    border: 5px solid #dfdfdf;
    padding: 30px 10px;
    height: 87vh;
+   transition: opacity 250ms ease-in, transform 400ms ease-in;
+   transform: translatex(30%);
+   opacity: 0;
+
+}
+.almost form.appear{
+   transform: translateX(0);
+   opacity: 1;
 }
 
 
@@ -591,6 +616,7 @@ textarea{
    grid-template-columns: 1fr 6fr 6fr 3fr 7fr 5fr;
    column-gap: 20px;
    overflow: hidden;
+   height: 50vh;
    /* padding: 30px; */
 }
 
@@ -631,6 +657,7 @@ textarea{
    margin-top: 00px;
    background-color: #015e83 ;
    padding: 70px 30px;
+   height: 45vh;
    
 }
 
@@ -793,3 +820,22 @@ textarea{
   background-color: #138AB9;
 
 } 
+
+.footgg{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background-color: rgba(0,0,0,0.5);
+   /* background: transparent; */
+   gap: 25%;
+   /* background-color: black; */
+   border-bottom: 1px;
+   /* background:linear-gradient(to top, rgba(0,0,0,0.9)50%,rgba(0,0,0,0.9)50%), url(./image/maritime-vessel.jpg); */
+   height: 5vh;
+   margin-top: -50px;
+ 
+}
+
+.footgg h4{
+   color: #fff;
+}
