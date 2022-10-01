@@ -477,7 +477,7 @@ main{
 
 .police h3{
    font-size: 30px;
-   padding-left: 310px;
+   padding-left: 170px;
 }
 
 .policecon{
@@ -616,7 +616,7 @@ textarea{
    grid-template-columns: 1fr 6fr 6fr 3fr 7fr 5fr;
    column-gap: 20px;
    overflow: hidden;
-   height: 50vh;
+   height: 60vh;
    /* padding: 30px; */
 }
 
@@ -832,7 +832,7 @@ textarea{
    border-bottom: 1px;
    /* background:linear-gradient(to top, rgba(0,0,0,0.9)50%,rgba(0,0,0,0.9)50%), url(./image/maritime-vessel.jpg); */
    height: 5vh;
-   margin-top: -50px;
+   margin-top: -30px;
  
 }
 
