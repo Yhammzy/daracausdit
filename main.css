@@ -47,7 +47,7 @@ main{
     background-size: cover;
     background-position: right;
     height: 90vh;
-    padding-left: 340px;
+    padding-left: 270px;
  }
  .landing h2{
     padding: 100px 50px 50px 0;
@@ -59,7 +59,7 @@ main{
  .landing h1{
     color: #fff;
     padding-bottom: 20px;
-    font-size: 70px;
+    font-size: 50px;
  }
 
  .landing p{
