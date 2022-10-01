@@ -47,7 +47,7 @@ main{
     background-size: cover;
     background-position: right;
     height: 90vh;
-    padding-left: 200px;
+    padding-left: 340px;
  }
  .landing h2{
     padding: 100px 50px 50px 0;
@@ -59,12 +59,12 @@ main{
  .landing h1{
     color: #fff;
     padding-bottom: 20px;
-    font-size: 60px;
+    font-size: 70px;
  }
 
  .landing p{
     color: rgb(156, 156, 156);
-    font-size: 13px;
+    font-size: 17px;
     line-height: 20px;
     letter-spacing: 2px;
  }
@@ -79,7 +79,7 @@ main{
     padding: 13px 28px;
     margin-top: 50px;
     font-weight: 300;
-    font-size: 12px;
+    font-size: 15px;
     cursor: pointer;
     transition: 0.3s ease-out;
    
@@ -107,15 +107,27 @@ main{
     height: 60vh;
     align-items: center;
  }
- .flip-box {
+ .flip-box1 {
     background-color: transparent;
     width: 350px;
     height: 350px;
     border: 1px solid #f1f1f1;
     perspective: 1000px; 
+    transform: translateY(50%);
   }
+  .flip-box1{
+   transition: opacity 250ms ease-in, transform 400ms ease-in;
+   /* transform: rotate(30dg); */
+   opacity: 0;
+}
+
+.flip-box1.appear{
+   transform: translateY(0);
+   opacity: 1;
+}
+
   
-  .flip-box-inner {
+  .flip-box1-inner {
     position: relative;
     width: 100%;
     height: 100%;
@@ -124,18 +136,18 @@ main{
     transform-style: preserve-3d;
   }
   
-  .flip-box:hover .flip-box-inner {
+  .flip-box1:hover .flip-box1-inner {
     transform: rotateY(180deg);
   }
   
-  .flip-box-front, .flip-box-back {
+  .flip-box1-front, .flip-box1-back {
     position: absolute;
     width: 100%;
     height: 100%;
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
   }
-  .flip-box-front2, .flip-box-back2 {
+  /* .flip-box-front2, .flip-box-back2 {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -148,9 +160,9 @@ main{
     height: 100%;
     -webkit-backface-visibility: hidden; 
     backface-visibility: hidden;
-  }
+  } */
   
-  .flip-box-front {
+  .flip-box1-front {
     color: rgb(255, 255, 255);
     display: flex;
     justify-content: center;
@@ -160,7 +172,7 @@ main{
     background-size: cover;
   }
   
-  .flip-box-back {
+  .flip-box1-back {
     background-color: dodgerblue;
     color: white;
     transform: rotateY(180deg);
@@ -171,82 +183,17 @@ main{
      flex-direction: column;
     align-items: center;
     padding: 50px;
-}
-  .flip-box-front2 {
-    color: rgb(255, 255, 255);
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    background:linear-gradient(to top, rgba(0,0,0,0.5)50%,rgba(0,0,0,0.5)50%), url(./image/20210403_1616490.jpg);
-    background-position: center;
-    background-size: cover;
-  }
-  
-  .flip-box-back2 {
-    background-color: dodgerblue;
-    color: white;
-    transform: rotateY(180deg);
-    background:linear-gradient(to top, rgba(0,0,0,0.9)50%,rgba(0,0,0,0.9)50%), url(./image/20210403_1616490.jpg);
-    background-position: center;
-    background-size: cover;
-    display: flex;
-     flex-direction: column;
-    align-items: center;
-    padding: 50px;
-}
-  .flip-box-front3 {
-    color: rgb(255, 255, 255);
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    background:linear-gradient(to top, rgba(0,0,0,0.5)50%,rgba(0,0,0,0.5)50%), url(./image/IMG-20210403-WA0014.jpg);
-    background-position: center;
-    background-size: cover;
-  }
-  
-  .flip-box-back3 {
-    background-color: dodgerblue;
-    color: white;
-    transform: rotateY(180deg);
-    background:linear-gradient(to top, rgba(0,0,0,0.9)50%,rgba(0,0,0,0.9)50%), url(./image/IMG-20210403-WA0014.jpg);
-    background-position: center;
-    background-size: cover;
-    display: flex;
-     flex-direction: column;
-    align-items: center;
-    padding: 50px;
-}
-.flip-box-back h3 {
+   }
+ 
+.flip-box1-back h3 {
     background-color: transparent;
     border: 1px solid #fff;
     padding: 10px;
     cursor: pointer;
 }
-.flip-box-back h3:hover{
+.flip-box1-back h3:hover{
    background-color: #138AB9;
    
-}
-.flip-box-back2 h3 {
-    background-color: transparent;
-    border: 1px solid #fff;
-    padding: 10px;
-    cursor: pointer;
-}
-.flip-box-back2 h3:hover{
-   background-color: #138AB9;
-
-}
-.flip-box-back3 h3 {
-    background-color: transparent;
-    border: 1px solid #fff;
-    padding: 10px;
-    cursor: pointer;
-}
-.flip-box-back3 h3:hover{
-   background-color: #138AB9;
-
 }
 
 .container1{
@@ -260,6 +207,10 @@ main{
    width: 100%;
 }
 
+.contin{
+   /* transform: translateX(50%); */
+}
+
 .container1 img{
    width: 540px;
    height: 277.09px;
@@ -270,9 +221,27 @@ main{
    justify-content: center;
 }
 
-.container1 p{
+.contin p{
    color: #54595F;
    font-size: 15px;
+   transform: translateX(50%);
+}
+/* .contin, */
+.contin p{
+    transition: opacity 250ms ease-in, transform 400ms ease-in;
+    /* transform: rotate(30dg); */
+    opacity: 0;
+}
+
+/* .contin.appear{
+    transform: translateX(0);
+    opacity: 1;
+    
+} */
+.contin p.appear{
+    /* transform: rotate(35deg); */
+    opacity: 1;
+    transform: translateX(0);
 }
 
 .star{
@@ -296,7 +265,19 @@ main{
    outline: none;
    padding: 20px;
    padding-right: 70px;
+   transform: translateX(-50%);
+   transition: opacity 250ms ease-in, transform 400ms ease-in;
+  transform: rotate(45deg);
+  opacity: 0;
 }
+
+.starrgt1.appear{
+   /* transform: rotate(30deg); */
+   transform: rotate(0);
+   opacity: 1;
+}
+
+
 .starrgt2{
    border: solid rgb(216, 216, 216);
    border-left: 0px;
@@ -305,6 +286,14 @@ main{
    outline: none;
    padding: 20px;
    padding-left: 70px;
+   transition: opacity 250ms ease-in, transform 400ms ease-in;
+  transform: rotate(-45deg);
+  opacity: 0;
+}
+.starrgt2.appear{
+   /* transform: rotate(30deg); */
+   transform: rotate(0);
+   opacity: 1;
 }
 .starrgt3{
    border: solid rgb(216, 216, 216);
@@ -314,7 +303,16 @@ main{
    outline: none;
    padding: 20px;
    padding-right: 70px;
-}
+   transition: opacity 250ms ease-in, transform 400ms ease-in;
+   transform: rotate(-45deg);
+   opacity: 0;
+ }
+ .starrgt3.appear{
+    /* transform: rotate(30deg); */
+    transform: rotate(0);
+    opacity: 1;
+ }
+
 .starrgt4{
    border: solid rgb(216, 216, 216);
    border-left: 0px;
@@ -324,7 +322,16 @@ main{
    outline: none;
    padding: 20px;
    padding-left: 70px;
-}
+   transition: opacity 250ms ease-in, transform 400ms ease-in;
+   transform: rotate(45deg);
+   opacity: 0;
+ }
+ .starrgt4.appear{
+    /* transform: rotate(30deg); */
+    transform: rotate(0);
+    opacity: 1;
+ }
+
 .fa-times{
    padding: 20px;
    border-radius: 30px;
@@ -632,3 +639,155 @@ textarea{
 .fade-in.appear{
    opacity: 1;
 }
+
+.flip-box2 {
+   background-color: transparent;
+   width: 350px;
+   height: 350px;
+   border: 1px solid #f1f1f1;
+   perspective: 1000px; 
+   transform: translateY(-50%);
+ }
+ .flip-box2{
+  transition: opacity 250ms ease-in, transform 400ms ease-in;
+  /* transform: rotate(30dg); */
+  opacity: 0;
+}
+
+.flip-box2.appear{
+  transform: translateY(0);
+  opacity: 1;
+}
+
+ 
+ .flip-box2-inner {
+   position: relative;
+   width: 100%;
+   height: 100%;
+   text-align: center;
+   transition: transform 0.8s;
+   transform-style: preserve-3d;
+ }
+ 
+ .flip-box2:hover .flip-box2-inner {
+   transform: rotateY(180deg);
+ }
+
+  .flip-box2-front2, .flip-box2-back2 {
+   position: absolute;
+   width: 100%;
+   height: 100%;
+   -webkit-backface-visibility: hidden; 
+   backface-visibility: hidden;
+ }
+
+ .flip-box2-front2 {
+   color: rgb(255, 255, 255);
+   display: flex;
+   justify-content: center;
+   flex-direction: column;
+   align-items: center;
+   background:linear-gradient(to top, rgba(0,0,0,0.5)50%,rgba(0,0,0,0.5)50%), url(./image/20210403_1616490.jpg);
+   background-position: center;
+   background-size: cover;
+ }
+ 
+ .flip-box2-back2 {
+   background-color: dodgerblue;
+   color: white;
+   transform: rotateY(180deg);
+   background:linear-gradient(to top, rgba(0,0,0,0.9)50%,rgba(0,0,0,0.9)50%), url(./image/20210403_1616490.jpg);
+   background-position: center;
+   background-size: cover;
+   display: flex;
+    flex-direction: column;
+   align-items: center;
+   padding: 50px;
+}
+
+ .flip-box2-back2 h3 {
+   background-color: transparent;
+   border: 1px solid #fff;
+   padding: 10px;
+   cursor: pointer;
+}
+.flip-box2-back2 h3:hover{
+  background-color: #138AB9;
+
+}
+
+.flip-box3 {
+   background-color: transparent;
+   width: 350px;
+   height: 350px;
+   border: 1px solid #f1f1f1;
+   perspective: 1000px; 
+   transform: translateY(50%);
+ }
+ .flip-box3{
+  transition: opacity 250ms ease-in, transform 400ms ease-in;
+  /* transform: rotate(30dg); */
+  opacity: 0;
+}
+
+.flip-box3.appear{
+  transform: translateY(0);
+  opacity: 1;
+}
+
+ 
+ .flip-box3-inner {
+   position: relative;
+   width: 100%;
+   height: 100%;
+   text-align: center;
+   transition: transform 0.8s;
+   transform-style: preserve-3d;
+ }
+ 
+ .flip-box3:hover .flip-box3-inner {
+   transform: rotateY(180deg);
+ }
+
+.flip-box3-front3, .flip-box3-back3 {
+   position: absolute;
+   width: 100%;
+   height: 100%;
+   -webkit-backface-visibility: hidden; 
+   backface-visibility: hidden;
+ }
+ 
+ .flip-box3-front3 {
+   color: rgb(255, 255, 255);
+   display: flex;
+   justify-content: center;
+   flex-direction: column;
+   align-items: center;
+   background:linear-gradient(to top, rgba(0,0,0,0.5)50%,rgba(0,0,0,0.5)50%), url(./image/IMG-20210403-WA0014.jpg);
+   background-position: center;
+   background-size: cover;
+ }
+ 
+ .flip-box3-back3 {
+   background-color: dodgerblue;
+   color: white;
+   transform: rotateY(180deg);
+   background:linear-gradient(to top, rgba(0,0,0,0.9)50%,rgba(0,0,0,0.9)50%), url(./image/IMG-20210403-WA0014.jpg);
+   background-position: center;
+   background-size: cover;
+   display: flex;
+    flex-direction: column;
+   align-items: center;
+   padding: 50px;
+} 
+
+ .flip-box3-back3 h3 {
+   background-color: transparent;
+   border: 1px solid #fff;
+   padding: 10px;
+   cursor: pointer;
+}
+.flip-box3-back3 h3:hover{
+  background-color: #138AB9;
+
+} 
