@@ -37,10 +37,55 @@ main{
     font-weight: 300;
     font-size: 13px;
     text-transform: uppercase;
+    overflow: hidden;
 }
+
+.navmenu h3{
+   float: left;
+   display: block;
+   color: #f2f2f2;
+   text-align: center;
+   padding: 14px 16px;
+   text-decoration: none;
+   font-size: 17px;
+}
+.navmenu a {
+   float: left;
+   display: block;
+   color: #f2f2f2;
+   text-align: center;
+   padding: 14px 16px;
+   text-decoration: none;
+   font-size: 17px;
+ }
 .navmenu h3:hover{
     color: #138AB9;
 }
+
+.navmenu .icon {
+   display: none;}
+
+   @media screen and (max-width: 600px) {
+      .navmenu h3:not(:first-child) {display: none;}
+      .navmenu a.icon {
+        float: right;
+        display: block;
+      }
+    }
+
+    @media screen and (max-width: 600px) {
+      .navmenu.responsive {position: relative;}
+      .navmenu.responsive a.icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+      }
+      .navmenu.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+      }
+    }
 .landing{
     background:linear-gradient(to top, rgba(0,0,0,0.6)50%,rgba(0,0,0,0.6)50%), url(./image/maritime-vessel.jpg);
     background-size: cover;

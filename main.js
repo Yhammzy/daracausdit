@@ -1,9 +1,9 @@
 const faders = document.querySelectorAll('.fade-in');
 const sliders = document.querySelectorAll('.slide-in')
-
+var x = document.getElementById("myTopnav");
 const appearOptions = {
     threshold: 0,
-    rootMargin: "0px 0px 100px 0px"
+    rootMargin: "0px 0px -60% 0px"
 
 };
 const appearOnScroll = new IntersectionObserver
@@ -16,7 +16,7 @@ const appearOnScroll = new IntersectionObserver
             return;
         }  else {
             entry.target.classList.add('appear');
-            appearOnScroll,unobserve(entry.target);
+            appearOnScroll.unobserve(entry.target);
         }   
         });
     },
@@ -29,3 +29,11 @@ const appearOnScroll = new IntersectionObserver
     sliders.forEach(slider => {
         appearOnScroll.observe(slider);
     });
+
+  function myFunction() {
+    if (x.className === ".navmenu") {
+      x.className += " responsive";
+    } else {
+      x.className = ".navmenu";
+    }
+  }
