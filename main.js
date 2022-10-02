@@ -30,10 +30,9 @@ const appearOnScroll = new IntersectionObserver
         appearOnScroll.observe(slider);
     });
 
-  function myFunction() {
-    if (x.className === ".navmenu") {
-      x.className += " responsive";
-    } else {
-      x.className = ".navmenu";
-    }
-  }
+    const hamburger = document.querySelector('.hamburger');
+    const navLink = document.querySelector('.navmenu');
+    
+    hamburger.addEventListener('click', () => {
+      navLink.classList.toggle('hide');
+    });
