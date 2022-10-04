@@ -884,21 +884,65 @@ textarea{
 .form-popup {
   display: none;
   position: fixed;
-  bottom: 0;
-  /* right: 15px; */
-  border: 3px solid #f1f1f1;
+  bottom: 10px;
+  right: 40px;
+  border: 1px solid #f1f1f1;
   z-index: 9;
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
 
 /* Add styles to the form container */
 .form-container {
-  max-width: 300px;
-  padding: 10px;
+  max-width: 400px;
+  height: 500px;
+  /* padding: 10px; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   background-color: white;
 }
+
+.form-container h2{
+   font-size: 16px;
+   background-color: black;
+   color: #fff;
+   padding: 40px 30px;
+   padding-bottom: 67px;
+   margin-bottom: ;
+   margin-top: -50%;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+
+.popup{
+   width: 350px;
+   background-color: #fff;
+   border-left: #000000 5px solid;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   padding: 20px;
+   margin-top: -9%;
+   border-radius: 10px;
+
+}
+
+.popup input{
+   width: 100%;
+   padding: 15px;
+   margin: 5px 0 22px 0;
+   border: none;
+   background: #f1f1f1;
+}
+
+form
 
 /* Full-width input fields */
 .form-container input[type=text], .form-container input[type=password] {
@@ -917,7 +961,7 @@ textarea{
 
 /* Set a style for the submit/login button */
 .form-container .btn {
-  background-color: #04AA6D;
+  background-color: black;
   color: white;
   padding: 16px 20px;
   border: none;
@@ -935,7 +979,7 @@ textarea{
 /* Add some hover effects to buttons */
 .form-container .btn:hover, .open-button:hover {
   opacity: 1;
-} */
+} 
 
 @media (max-width: 1118px) {
    .nav{

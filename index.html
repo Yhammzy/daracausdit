@@ -316,20 +316,24 @@
     <button class="open-button" onclick="openForm()">Open Form</button>
 
     <!-- The form -->
-    <!-- <div class="form-popup" id="myForm">
-      <form action="/action_page.php" class="form-container">
-        <h1>Login</h1>
+    <div class="form-popup" id="myForm">
+      <form  action="https://formsubmit.co/yisaahmed01@gmail.com" method="post" class="form-container">
+        <h2>Please fill out the form below and we will get<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;back to you as soon as possible</h2>
+        <div class="popup">
+          <input type="text" placeholder="*Name" name="Name" required>
+  
+          <input type="email" placeholder="Email" name="Email" required>
 
-        <label for="email"><b>Email</b></label>
-        <input type="text" placeholder="Enter Email" name="email" required>
+          <input type="password" placeholder="password" name="password" required>
 
-        <label for="psw"><b>Password</b></label>
-        <input type="password" placeholder="Enter Password" name="psw" required>
-
-        <button type="submit" class="btn">Login</button>
-        <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+          <input type="text" placeholder="Message" name="Message" required>
+  
+          <button type="submit" class="btn"><i class="fa fa-send"></i>&nbsp;&nbsp;Submit</button>
+          <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+          
+        </div>
       </form>
-    </div> -->
+    </div>
     <script src="main.js"></script>
 </body>
 </html>
