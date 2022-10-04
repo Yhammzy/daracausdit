@@ -30,3 +30,10 @@ const appearOnScroll = new IntersectionObserver
     sliders.forEach(slider => {
         appearOnScroll.observe(slider);
     });
+    function openForm() {
+        document.getElementById("myForm").style.display = "block";
+      }
+      
+      function closeForm() {
+        document.getElementById("myForm").style.display = "none";
+      }
