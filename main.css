@@ -1249,7 +1249,7 @@ form
        justify-content: center; 
        align-items: center;
        flex-direction: column;
-      font-size: 25px;
+      font-size: 15px;
       /* margin-left: -25%; */
       padding-bottom: 10px;
 
@@ -1259,7 +1259,7 @@ form
       justify-content: center; 
       align-items: center;
       flex-direction: column;
-      font-size: 30px;
+      font-size: 25px;
       width: 100%;
       margin-left: -35%;
       
@@ -1394,8 +1394,8 @@ form
     
    }
    .ship{
-      height: 70vh;
-      width: 100%;
+      height: 60vh;
+      width: 120%;
 
       
    }
@@ -1479,6 +1479,47 @@ form
    .fa-user{
       margin-bottom: 30px;
    }
-
+   
+   .policecon{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+   }
+   .read{
+      margin-top: -20%;
+   }
+   .div{
+      font-size: 20px;
+   }
+   .almost{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      transform: translateX(15%);
+   }
+   .almost h3{
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+   }
+   .almost form{
+      width: 100%;
+   }
+   .form-popup {
+      display: none;
+      position: fixed;
+      bottom: 10px;
+      right: 200px;
+      border: 1px solid #f1f1f1;
+      z-index: 9;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
 }
 
