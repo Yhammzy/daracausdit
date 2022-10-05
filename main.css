@@ -1231,3 +1231,250 @@ form
 }
 
 
+@media (max-width: 594px){
+   .nav{
+      display: none;
+   }
+   .landing{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      margin-top: -20%;
+      height: 80vh;
+   }
+   .landing h2{
+       display: flex; 
+       justify-content: center; 
+       align-items: center;
+       flex-direction: column;
+      font-size: 25px;
+      margin-left: -25%;
+      padding-bottom: 10px;
+
+   }
+   .landing H1{
+      display: flex; 
+      justify-content: center; 
+      align-items: center;
+      flex-direction: column;
+      font-size: 30px;
+      width: 100%;
+      margin-left: -35%;
+      
+   }
+   .landing p{
+      margin-left: -120px;
+      font-size: 10px;
+      line-height: normal;
+      letter-spacing: normal;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+   }
+   .f{
+      /* margin-top: -18px; */
+      margin-top: -9px;
+   }
+   .landing h3{
+      margin-left: -35%;
+      margin-top: 20px;
+      font-size: 13px;
+      padding: 10px 10px;
+   }
+   .bord{
+      display: flex;
+      justify-content: center;
+      /* padding-left: 35%; */
+      align-items: center;
+      font-size: 15px;
+      flex-direction: column;
+      padding: 10px 0;
+   }
+   .imagebox{
+      display: flex;
+      flex-direction: column;
+      height: 150vh;
+      align-items: center;
+      justify-content: center;
+
+   }
+
+   .flip-box1{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 20px;
+      width: 90%;
+      height: 50vh;
+
+
+   }
+   .flip-box2{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      /* margin-top: 10px; */
+      width: 90%;
+      height: 50vh;
+
+
+   }
+   .flip-box3{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      /* margin-top: 10px; */
+      width: 90%;
+      height: 50vh;
+   }
+   .container1{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      padding: 30px 0;
+      width: 100%; 
+
+      height: 100vh;
+   }
+   .container1 img{
+      width: 150%; 
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-left: -15%;
+   }
+   .contin p{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      font-size: 13px;
+      line-height: 25px;
+   }
+   .star{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+   }
+   .starrgt{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 50px;
+      margin-top: 20px;
+      color: #54595F;
+      
+   }
+   .starrgt1{
+      border: none;
+      padding: 0;
+   }
+   .starrgt2{
+      border: none;
+      padding: 0;
+      margin-left: -15%;
+   }
+   .starrgt3{
+      border: none;
+      padding: 0;
+      margin-left: -23%;
+   }
+   .starrgt4{
+      border: none;
+      padding: 0;
+    
+   }
+   .ship{
+      height: 70vh;
+      width: 100%;
+
+      
+   }
+   .h4class{
+      display: flex;
+      justify-content: left;
+      font-size: 13px;
+      margin-left: 8%;
+      margin-top: 50px;
+      
+   }
+   .shipi{
+      display: grid;
+      grid-template-columns: auto auto;
+      column-gap: 0px;
+      row-gap: 0px ;
+      font-size: 10px;
+   }
+   .shipic:first-child{
+      border-right: 1px solid gray;
+      border-bottom: 1px solid gray;
+      padding: 10px 90px;
+   }
+   .shipic:nth-child(2){
+      /* border-right: 1px solid gray; */
+      border-bottom: 1px solid gray;
+      padding: 10px 90px;
+   }
+   .shipic:nth-child(3){
+      border-right: 1px solid gray;
+      padding: 10px 90px;
+   }
+   .shipic:nth-child(4){
+      padding: 10px 90px;
+   }
+
+   .shipi h5{
+      font-size: 15px;
+   }
+
+   .ship2ic{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      padding: 30px 0; 
+      margin-top: 20px;
+   }
+   .ship2ic img{
+      width: 150%; 
+      display: flex;
+      justify-content: center;
+      width: 90%;
+      height: 321px; 
+      align-items: center;
+   }
+   .ship2icon{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+   }
+   .ship2icon H3{
+      display: flex;
+      justify-content: left;
+      font-size: 35PX;
+   }
+   .ship2iconb{
+      display: flex;
+      flex-direction: column;
+      /* justify-content: center; */
+      /* align-items: center; */
+   }
+   .ship2iconb h5{
+      display: flex;
+      flex-direction: column;
+      margin-left: 0;
+      /* justify-content: center; */
+      /* align-items: center; */
+   }
+   .fa-user{
+      margin-bottom: 30px;
+   }
+
+}
+
