@@ -984,7 +984,7 @@ form
   opacity: 1;
 } 
 
-@media (max-width: 1118px) {
+@media (max-width: 594px) {
    .nav{
       display: none;
    }
