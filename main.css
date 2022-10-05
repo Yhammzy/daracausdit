@@ -1345,6 +1345,7 @@ form
       margin-top: -20%;
       height: 80vh;
       width: 100%;
+      margin-left: -10%;
    }
    .landing h2{
        display: flex; 
